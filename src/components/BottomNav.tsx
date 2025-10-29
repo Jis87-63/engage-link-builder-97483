@@ -1,11 +1,9 @@
-import { Search, Star, Gift, Mail, Tag } from "lucide-react";
+import { Star, Gift, Tag } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
-  { name: "Pesquisar", icon: Search, path: "/" },
   { name: "Os Meus Jogos", icon: Star, path: "/" },
   { name: "Recompensas", icon: Gift, path: "/" },
-  { name: "Caixa de Entrada", icon: Mail, path: "/" },
   { name: "Promoções", icon: Tag, path: "/promocoes" },
 ];
 
@@ -17,7 +15,7 @@ export const BottomNav = () => {
       <div className="flex items-center justify-around h-16 px-2">
         {navItems.map((item, index) => {
           const isActive = location.pathname === item.path && item.path !== "/" || 
-                          (index === 2 && location.pathname === "/");
+                          (index === 1 && location.pathname === "/");
           
           return (
             <Link

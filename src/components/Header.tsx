@@ -1,6 +1,6 @@
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import lionLogo from "@/assets/lion-logo.png";
 
 export const Header = () => {
   return (
@@ -8,21 +8,24 @@ export const Header = () => {
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Spribe" className="h-8 w-auto" />
+            <img src={lionLogo} alt="Logo" className="h-10 w-10 rounded-full" />
+            <span className="text-xl font-bold bg-gradient-to-r from-primary to-yellow-500 bg-clip-text text-transparent">
+              PrideBet
+            </span>
           </div>
         </div>
 
         <div className="flex items-center gap-3">
           <Button 
             variant="outline" 
-            className="hidden md:flex border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+            className="hidden md:flex border-primary/50 text-primary hover:bg-primary/10 hover:border-primary transition-all"
           >
             ENTRAR
           </Button>
           <Button 
-            className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold shadow-glow transition-all"
+            className="bg-gradient-to-r from-primary to-yellow-500 hover:from-primary/90 hover:to-yellow-500/90 text-white font-bold shadow-lg hover:shadow-xl transition-all px-6"
           >
-            CADASTRE-SE
+            REGISTRAR
           </Button>
           <Button variant="ghost" size="icon" className="md:hidden text-foreground">
             <Menu className="h-6 w-6" />
