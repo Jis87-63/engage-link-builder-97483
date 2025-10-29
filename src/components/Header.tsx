@@ -10,7 +10,7 @@ export const Header = () => {
           <div className="flex items-center gap-2">
             <img src={lionLogo} alt="Logo" className="h-10 w-10 rounded-full" />
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-yellow-500 bg-clip-text text-transparent">
-              PrideBet
+              FllopsBet
             </span>
           </div>
         </div>
@@ -18,7 +18,9 @@ export const Header = () => {
         <div className="flex items-center gap-3">
           <Button 
             variant="outline" 
-            className="hidden md:flex border-primary/50 text-primary hover:bg-primary/10 hover:border-primary transition-all"
+            size="sm"
+            className="hidden md:flex bg-black border text-white hover:bg-black/90 hover:border-white/50 transition-all"
+            style={{ borderWidth: '1px' }}
           >
             ENTRAR
           </Button>
