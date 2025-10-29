@@ -19,8 +19,6 @@ import uk49TeatimeImg from "@/assets/uk49-teatime.webp";
 import ukHealthLotteryImg from "@/assets/uk-health-lottery.webp";
 import ukLottoImg from "@/assets/uk-lotto.webp";
 import ukThunderballImg from "@/assets/uk-thunderball.webp";
-import promo7 from "@/assets/promo-7.webp";
-import promo8 from "@/assets/promo-8.webp";
 
 const games = [
   { title: "Aero", image: aeroImg, color: "#dc2626", category: "crash" },
@@ -86,47 +84,6 @@ const Index = () => {
                 color={game.color}
               />
             ))}
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-bold text-foreground mb-6">Promoções</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-card rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
-              <img 
-                src={promo7} 
-                alt="Desafio do Aviator" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-foreground">Desafio do Aviator</h3>
-                <p className="text-muted-foreground">
-                  O teu céu, o teu dinheiro! 200 vencedores vão partilhar 50,000 MT em Apostas Grátis. 
-                  A Corrida do Aviator decorre de quinta a sábado. Serás um dos Jogadores do Topo?
-                </p>
-                <button className="w-full bg-primary text-primary-foreground font-bold py-3 rounded-lg hover:opacity-90 transition-opacity">
-                  MAIS INFORMAÇÕES
-                </button>
-              </div>
-            </div>
-
-            <div className="bg-card rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
-              <img 
-                src={promo8} 
-                alt="Spin$ Splash" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-foreground">Spin$ Splash</h3>
-                <p className="text-muted-foreground">
-                  A melhor recompensa, onde o jogo sempre te dá mais! Gire e Ganhe Freebets Diárias. 
-                  Mais diversão, mais prémios, mais emoção todos os dias!
-                </p>
-                <button className="w-full bg-primary text-primary-foreground font-bold py-3 rounded-lg hover:opacity-90 transition-opacity">
-                  MAIS INFORMAÇÕES
-                </button>
-              </div>
-            </div>
           </div>
         </section>
       </main>
