@@ -25,7 +25,8 @@ export const Header = () => {
             ENTRAR
           </Button>
           <Button 
-            className="bg-gradient-to-r from-primary to-yellow-500 hover:from-primary/90 hover:to-yellow-500/90 text-white font-bold shadow-lg hover:shadow-xl transition-all px-6"
+            className="bg-black border text-white hover:bg-black/90 hover:border-white/50 text-xs font-semibold px-4 py-2 h-8 transition-all"
+            style={{ borderWidth: '1px' }}
           >
             REGISTRAR
           </Button>
