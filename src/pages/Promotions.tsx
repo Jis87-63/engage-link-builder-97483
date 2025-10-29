@@ -59,11 +59,11 @@ const Promotions = () => {
               key={promo.id}
               className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="relative aspect-[16/7] overflow-hidden">
+              <div className="relative aspect-[16/7] overflow-hidden bg-muted/30">
                 <img 
                   src={promo.image} 
                   alt={promo.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-3 space-y-2">
