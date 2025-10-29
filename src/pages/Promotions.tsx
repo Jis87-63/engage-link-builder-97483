@@ -53,25 +53,25 @@ const Promotions = () => {
           <h1 className="text-3xl font-bold text-foreground">Promoções</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {promotions.map((promo) => (
             <div 
               key={promo.id}
-              className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="relative aspect-[2/1] overflow-hidden">
+              <div className="relative aspect-[16/7] overflow-hidden">
                 <img 
                   src={promo.image} 
                   alt={promo.title}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6 space-y-4">
-                <h2 className="text-xl font-bold text-foreground">{promo.title}</h2>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+              <div className="p-3 space-y-2">
+                <h2 className="text-base font-bold text-foreground">{promo.title}</h2>
+                <p className="text-muted-foreground text-xs leading-snug">
                   {promo.description}
                 </p>
-                <button className="w-full bg-primary text-primary-foreground font-bold py-3 rounded-lg hover:opacity-90 transition-opacity">
+                <button className="w-full bg-primary text-primary-foreground font-semibold text-xs py-2 rounded-lg hover:opacity-90 transition-opacity">
                   MAIS INFORMAÇÕES
                 </button>
               </div>
