@@ -19,6 +19,7 @@ import uk49TeatimeImg from "@/assets/uk49-teatime.webp";
 import ukHealthLotteryImg from "@/assets/uk-health-lottery.webp";
 import ukLottoImg from "@/assets/uk-lotto.webp";
 import ukThunderballImg from "@/assets/uk-thunderball.webp";
+import spacemanImg from "@/assets/spaceman.webp";
 
 const games = [
   { title: "Aero", image: aeroImg, color: "#dc2626", category: "crash" },
@@ -30,6 +31,7 @@ const games = [
   { title: "Avia Rush", image: aviaRushImg, color: "#6366f1", category: "crash" },
   { title: "Chicken Route", image: chickenRouteImg, color: "#06b6d4", category: "crash" },
   { title: "Aero 2", image: aero2Img, color: "#8b5cf6", category: "crash" },
+  { title: "Spaceman", image: spacemanImg, color: "#7c3aed", category: "crash" },
   { title: "iSLotto", image: islottoImg, color: "#f59e0b", category: "lottery" },
   { title: "UK 49's Lunchtime", image: uk49LunchtimeImg, color: "#3b82f6", category: "lottery" },
   { title: "UK 49's Teatime", image: uk49TeatimeImg, color: "#3b82f6", category: "lottery" },
