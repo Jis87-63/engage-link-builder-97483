@@ -115,7 +115,7 @@ const GameDetails = () => {
               variant="outline"
               className="w-full h-14 text-xl font-bold bg-[#8B2E2E] hover:bg-[#8B2E2E]/90 text-primary border-2 border-primary rounded-xl"
             >
-              PRATICAR
+              Receber Bônus de registro
             </Button>
           </a>
         </div>
