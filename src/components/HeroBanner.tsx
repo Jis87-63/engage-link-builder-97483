@@ -30,6 +30,7 @@ const promoImages = [
 export const HeroBanner = () => {
   const [api, setApi] = useState<any>();
   const [current, setCurrent] = useState(0);
+  const registerUrl = "https://sshortly.net/18839e8";
 
   useEffect(() => {
     if (!api) return;
@@ -58,13 +59,20 @@ export const HeroBanner = () => {
         <CarouselContent>
           {promoImages.map((promo) => (
             <CarouselItem key={promo.id}>
-              <div className="relative overflow-hidden rounded-2xl shadow-xl aspect-[16/6]">
-                <img
-                  src={promo.src}
-                  alt={promo.alt}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <a 
+                href={registerUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block cursor-pointer"
+              >
+                <div className="relative overflow-hidden rounded-2xl shadow-xl aspect-[16/6] transition-transform hover:scale-[1.02]">
+                  <img
+                    src={promo.src}
+                    alt={promo.alt}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </a>
             </CarouselItem>
           ))}
         </CarouselContent>

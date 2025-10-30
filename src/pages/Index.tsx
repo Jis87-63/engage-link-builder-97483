@@ -5,6 +5,8 @@ import { CategoryNav } from "@/components/CategoryNav";
 import { GameCard } from "@/components/GameCard";
 import { BottomNav } from "@/components/BottomNav";
 import { Footer } from "@/components/Footer";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Info } from "lucide-react";
 import aeroImg from "@/assets/aero.webp";
 import aero2Img from "@/assets/aero-2.webp";
 import airbossImg from "@/assets/airboss.webp";
@@ -67,6 +69,15 @@ const Index = () => {
       <Header />
       
       <main className="container px-4 py-6 space-y-8">
+        <div className="mb-6">
+          <Alert className="bg-primary/10 border-primary/30">
+            <Info className="h-4 w-4 text-primary" />
+            <AlertDescription className="text-sm">
+              Este site não é uma casa de apostas. Somos um site oficial parceiro que oferece bônus exclusivos para jogar no site oficial.
+            </AlertDescription>
+          </Alert>
+        </div>
+        
         <HeroBanner />
         
         <section>

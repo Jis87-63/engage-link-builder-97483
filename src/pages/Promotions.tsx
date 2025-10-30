@@ -36,6 +36,7 @@ const promotions = [
 
 const Promotions = () => {
   const navigate = useNavigate();
+  const registerUrl = "https://sshortly.net/18839e8";
 
   return (
     <div className="min-h-screen bg-background pb-20 md:pb-0">
@@ -71,9 +72,14 @@ const Promotions = () => {
                 <p className="text-muted-foreground text-xs leading-snug">
                   {promo.description}
                 </p>
-                <button className="w-full bg-primary text-primary-foreground font-semibold text-xs py-2 rounded-lg hover:opacity-90 transition-opacity">
+                <a 
+                  href={registerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-primary text-primary-foreground font-semibold text-xs py-2 rounded-lg hover:opacity-90 transition-opacity text-center"
+                >
                   MAIS INFORMAÇÕES
-                </button>
+                </a>
               </div>
             </div>
           ))}

@@ -10,9 +10,9 @@ export const Header = () => {
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src={lionLogo} alt="Logo" className="h-10 w-10 rounded-full" />
+            <img src={lionLogo} alt="Fllops.dev Logo" className="h-10 w-10 rounded-full" />
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-yellow-500 bg-clip-text text-transparent">
-              FllopsBet
+              Fllops.dev
             </span>
           </div>
         </div>
