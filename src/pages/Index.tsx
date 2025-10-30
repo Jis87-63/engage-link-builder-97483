@@ -4,6 +4,7 @@ import { HeroBanner } from "@/components/HeroBanner";
 import { CategoryNav } from "@/components/CategoryNav";
 import { GameCard } from "@/components/GameCard";
 import { BottomNav } from "@/components/BottomNav";
+import { Footer } from "@/components/Footer";
 import aeroImg from "@/assets/aero.webp";
 import aero2Img from "@/assets/aero-2.webp";
 import airbossImg from "@/assets/airboss.webp";
@@ -90,6 +91,7 @@ const Index = () => {
         </section>
       </main>
 
+      <Footer />
       <BottomNav />
     </div>
   );
