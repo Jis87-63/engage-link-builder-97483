@@ -96,6 +96,7 @@ const MiniGame = () => {
     setRewards([]);
     setCollectedRewards([]);
     setTotalCollected(0);
+    totalRef.current = 0;
     setPlaneY(80);
     setShowResults(false);
 
