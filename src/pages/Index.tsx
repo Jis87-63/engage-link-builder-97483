@@ -5,6 +5,7 @@ import { CategoryNav } from "@/components/CategoryNav";
 import { GameCard } from "@/components/GameCard";
 import { BottomNav } from "@/components/BottomNav";
 import { Footer } from "@/components/Footer";
+import { MiniGameSection } from "@/components/MiniGameSection";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Info } from "lucide-react";
 import aeroImg from "@/assets/aero.webp";
@@ -100,6 +101,8 @@ const Index = () => {
             ))}
           </div>
         </section>
+
+        <MiniGameSection />
       </main>
 
       <Footer />
