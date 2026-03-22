@@ -150,7 +150,7 @@ const MiniGame = () => {
         setPlayed(game.id);
 
         setTimeout(() => {
-          if (collectedRewards.length > 0 || totalCollected > 0) {
+          if (totalRef.current > 0) {
             playWinSound();
           }
           setGameState("results");
