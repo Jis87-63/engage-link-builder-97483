@@ -84,6 +84,7 @@ const MiniGame = () => {
     );
     setCollectedRewards((prev) => [...prev, value]);
     setTotalCollected((prev) => prev + value);
+    totalRef.current += value;
     playCollectSound();
   }, []);
 
