@@ -101,6 +101,8 @@ const Index = () => {
             ))}
           </div>
         </section>
+
+        <MiniGameSection />
       </main>
 
       <Footer />
