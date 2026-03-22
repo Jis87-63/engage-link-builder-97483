@@ -50,6 +50,7 @@ const MiniGame = () => {
   const [cooldown, setCooldown] = useState(0);
   const [planeY, setPlaneY] = useState(80);
   const [showResults, setShowResults] = useState(false);
+  const totalRef = useRef(0);
 
   const crashTimeRef = useRef(0);
   const gameLoopRef = useRef<number>();
